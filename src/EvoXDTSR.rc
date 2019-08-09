@@ -1,0 +1,435 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_MAIN DIALOGEX 0, 0, 149, 175
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "EvoXDTSR"
+MENU IDR_MAIN_MENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Search",IDC_BUT_SEARCH,13,70,28,14,BS_FLAT
+    PUSHBUTTON      "Clear",IDC_BUT_CLEAR,13,35,28,14,BS_FLAT
+    PUSHBUTTON      "Poke",IDC_BUT_POKE,13,52,28,14,BS_FLAT
+    PUSHBUTTON      "Dump",IDC_BUT_DUMP,13,17,28,14,BS_FLAT
+    CONTROL         "",IDC_LIST_MEM,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_TABSTOP,45,17,89,43,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_MEMADDY,45,72,47,12,ES_UPPERCASE | ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_MEMPARAM,94,72,40,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    CONTROL         "",IDC_LIST_BP,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_TABSTOP,13,95,122,49,WS_EX_STATICEDGE
+    GROUPBOX        "Memory:",IDC_STATIC_MEMGROUP,7,7,134,83
+    GROUPBOX        "Breakpoints:",IDC_STATIC_BREAKGROUP,7,85,134,66
+    LTEXT           "Offset:",IDC_STATIC,45,62,24,8
+    LTEXT           "Param:",IDC_STATIC,94,62,24,8
+    CONTROL         "Last message...",IDC_STATIC_LASTLINE,"Static",SS_SIMPLE | SS_NOPREFIX | SS_SUNKEN | SS_WORDELLIPSIS | WS_GROUP,7,158,134,10
+END
+
+IDD_DLG_SETTINGS DIALOGEX 0, 0, 279, 97
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "EvoXDTSR Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_LOGCAP,12,28,72,12,ES_RIGHT | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "File log",IDC_CHECK_LOG,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,12,45,38,10
+    CONTROL         "Screen log",IDC_CHECK_SHOWSCREENLOG,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,65,44,47,10
+    EDITTEXT        IDC_EDIT_LOGPATH,12,72,80,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Normal",IDC_RADIO_BONORMAL,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_TABSTOP,130,26,38,10
+    CONTROL         "Reversed",IDC_RADIO_BOREVERSED,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_TABSTOP,168,26,47,10
+    CONTROL         "Multibyte prompt",IDC_CHECK_MULTIPROMPT,"Button",BS_AUTOCHECKBOX | BS_TOP | BS_FLAT | WS_TABSTOP,120,37,70,10
+    CONTROL         "",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,123,72,79,11
+    DEFPUSHBUTTON   "OK",IDOK,222,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,222,24,50,14
+    PUSHBUTTON      "...",IDC_BUT_LOGPATH,96,72,14,12
+    CONTROL         "Xbox IP Address:",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,119,61,59,8
+    GROUPBOX        "Poking:",IDC_STATIC,114,7,104,48
+    CONTROL         "Byte order:",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,120,17,39,9
+    GROUPBOX        "Logging:",IDC_STATIC,7,7,108,83
+    CONTROL         "Screen capacity:",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,12,18,54,9
+    CONTROL         "Log file path:",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,12,59,44,9
+    GROUPBOX        "Miscellaneous:",IDC_STATIC,114,50,104,40
+    LTEXT           "bytes",IDC_STATIC,89,31,21,8
+END
+
+IDD_DLG_ABOUT DIALOGEX 0, 0, 235, 111
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "About EvoXDTSR"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,221,96
+    LTEXT           "Release: ",IDC_STATIC,13,15,30,8
+    LTEXT           "Coded by ddh.\n\n     Designed to be a better alternative for interfacing with EvolutionX's Debug TSR.  Hopefully it's turned out to be a decent application.  Please report any bugs, comments, and suggestions you may have.",IDC_STATIC,13,29,212,49
+    LTEXT           "Not set.",IDC_STATIC_RELEASE,46,15,34,8,0,WS_EX_RIGHT
+    LTEXT           "As of this release I can be contacted on the EFNet network in the channel #mphacking.",IDC_STATIC,13,82,213,18
+END
+
+IDD_DLG_QUEUE DIALOGEX 0, 0, 227, 127
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Commands queue:"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_QUEUE_CMDS,7,7,213,94,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | NOT WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "Execute",IDC_BUT_CMDS_EXECUTE,7,106,50,14,BS_FLAT
+    PUSHBUTTON      "Clear",IDC_BUT_QUEUE_CLEAR,88,106,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDC_BUT_CMDS_CANCEL,169,106,50,14,BS_FLAT
+    PUSHBUTTON      "v",IDC_BUT_QUEUE_MENU,220,0,7,7,BS_FLAT
+END
+
+IDD_DLG_BPWIN DIALOGEX 0, 0, 360, 111
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Breakpoint History"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_BUT_BPWIN_OK,303,90,50,14,BS_FLAT
+    PUSHBUTTON      "Unfreeze",IDC_BUT_BPWIN_UNFREEZE,246,90,50,14,BS_FLAT
+    CONTROL         "",IDC_LIST_REGISTERS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_TABSTOP,7,7,346,75,WS_EX_STATICEDGE
+    PUSHBUTTON      "Freeze",IDC_BUT_BPWIN_FREEZE,189,90,50,14,BS_FLAT
+    EDITTEXT        IDC_EDIT_AUTOUNFREEZE,75,90,20,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    LTEXT           "for",IDC_STATIC_FOR,62,92,10,8
+    CONTROL         "Auto-Unfreeze",IDC_CHECK_AUTOUNFREEZE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,7,90,50,14
+    LTEXT           "breaks.",IDC_STATIC_BREAKS,99,92,25,8
+END
+
+IDD_DLG_DUMPWIN DIALOGEX 0, 0, 441, 172
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Dump Window"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_DWIN_DHIST,14,17,86,66,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_FIRSTDUMP,63,94,37,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DWIN_SECONDDUMP,63,110,37,12,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Compare",IDC_BUT_DWIN_COMPARE,51,126,50,14,WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDC_BUT_DWIN_OKAY,52,151,50,14
+    GROUPBOX        "Past Dumps:",IDC_STATIC,7,7,99,83
+    GROUPBOX        "Dump Comparison:",IDC_STATIC,7,85,99,61,WS_DISABLED
+    LTEXT           "First dump:",IDC_STATIC,13,97,37,8,WS_DISABLED
+    LTEXT           "Second dump:",IDC_STATIC,13,112,46,8,WS_DISABLED
+END
+
+IDD_DLG_NEWBP DIALOGEX 0, 0, 214, 79
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Create new breakpoint:"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Write",IDC_RADIO_WRITE,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP | WS_TABSTOP,13,21,33,10
+    CONTROL         "Read/Write",IDC_RADIO_READWRITE,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_TABSTOP,13,38,53,10
+    CONTROL         "Execute",IDC_RADIO_EXECUTE,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_TABSTOP,13,56,42,10
+    CONTROL         "BYTE",IDC_RADIO_BYTE,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP | WS_TABSTOP,76,21,32,10
+    CONTROL         "WORD",IDC_RADIO_WORD,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_TABSTOP,76,38,37,10
+    CONTROL         "DWORD",IDC_RADIO_DWORD,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_TABSTOP,76,56,42,10
+    EDITTEXT        IDC_EDIT_NEWBP_OFFSET,146,16,45,12,ES_UPPERCASE | ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_BPNUM,146,41,36,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    CONTROL         "",IDC_SPIN_BPNUM,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,182,41,11,12,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "OK",IDC_BUT_NEWBP_OK,139,59,32,12,BS_FLAT
+    PUSHBUTTON      "Cancel",IDC_BUT_NEWBP_CANCEL,175,59,32,12,BS_FLAT
+    GROUPBOX        "Break On:",IDC_STATIC,7,7,64,65
+    GROUPBOX        "Size:",IDC_STATIC,70,7,64,65
+    LTEXT           "Offset:",IDC_STATIC,139,7,24,8
+    LTEXT           "Slot:",IDC_STATIC_SLOTORDIS,139,30,48,8
+    CONTROL         "Enabled",IDC_CHECK_ENABLED,"Button",BS_AUTOCHECKBOX | BS_FLAT | NOT WS_VISIBLE | WS_TABSTOP,146,43,46,9
+END
+
+IDD_DLG_LOGWIN DIALOGEX 0, 0, 290, 182
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Log Window"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_LOG,7,7,276,168,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DLG_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 141
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_DLG_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_DLG_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_DLG_QUEUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_DLG_BPWIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 353
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_DLG_DUMPWIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 434
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_DLG_NEWBP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_DLG_LOGWIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENUEX
+BEGIN
+    POPUP "&App",                           65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "Dump Window",                 40099,MFT_STRING,MFS_GRAYED
+        MENUITEM "New BP Window",               ID_APP_NEWBPWINDOW,MFT_STRING,MFS_ENABLED
+        MENUITEM "BP History Window",           ID_APP_BPHISTORYWINDOW,MFT_STRING,MFS_ENABLED
+        MENUITEM "Log Window",                  ID_APP_LOGWINDOW,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "E&xit\tCtrl+X",               40060,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Functions",                     65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Connect\tCtrl+O",            40003,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Disconnect\tCtrl+D",         40004,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&Freeze\tCtrl+F",             40010,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Unfreeze\tCtrl+U",           40011,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        POPUP "&Reset",                         65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "&Hard\tCtrl+Alt+H",           40013,MFT_STRING,MFS_ENABLED
+            MENUITEM "&Soft\tCtrl+Alt+S",           40014,MFT_STRING,MFS_ENABLED
+        END
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&Queue/Raw Input\tCtrl+Q",    40052,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        POPUP "C&lear",                         65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "&Screen",                     40051,MFT_STRING,MFS_ENABLED
+            MENUITEM "F&ile",                       40056,MFT_STRING,MFS_ENABLED
+        END
+    END
+    POPUP "&Settings",                      65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "Settings &Window\tF2",        40061,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&File Log\tF3",               40072,MFT_STRING,MFS_CHECKED
+        MENUITEM "&Auto-Freeze\tF4",            40073,MFT_STRING,MFS_CHECKED
+        MENUITEM "Log Screen\tF5",              40074,MFT_STRING,MFS_ENABLED
+        MENUITEM "On Top\tF6",                  ID_SETTINGS_ONTOP,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Help",                          65535,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    BEGIN
+        MENUITEM "Contents\tF1",                40069,MFT_STRING,MFS_GRAYED
+        MENUITEM "&Quick Rundown",              40006,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&About",                      40007,MFT_STRING,MFS_ENABLED
+    END
+END
+
+IDR_SEARCH_POPUP MENU
+BEGIN
+    POPUP "SearchPopUp"
+    BEGIN
+        MENUITEM "Set Breakpoint",              ID_SRCH_SETBP
+        MENUITEM SEPARATOR
+        POPUP "Copy-To"
+        BEGIN
+            MENUITEM "Memory Address",              ID_SRCH_COPY_MEMORYOFFSET
+            MENUITEM "Clipboard",                   ID_SRCH_COPY_CLIPBOARD
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Remove Item",                 ID_SRCH_REMOVE_ITEM
+        MENUITEM "Clear List",                  ID_SRCH_CLEAR_LIST
+        MENUITEM "New Search",                  ID_SEARCHPOPUP_NEWSEARCH
+    END
+END
+
+IDR_BREAK_POPUP MENU
+BEGIN
+    POPUP "BPPopUp"
+    BEGIN
+        MENUITEM "Modify",                      ID_BPPOPUP_MODIFY
+        POPUP "Status"
+        BEGIN
+            MENUITEM "Enable",                      ID_BPPOPUP_STAT_ENABLE
+            MENUITEM "Disable",                     ID_BPPOPUP_STAT_DISABLE
+        END
+        MENUITEM "Clear",                       ID_BPPOPUP_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "List",                        ID_BPPOPUP_LIST
+        MENUITEM "Clear All",                   ID_BPPOPUP_CLEARALL
+    END
+END
+
+IDR_QUEUE_BUTMENU MENU
+BEGIN
+    POPUP "QueuePopUp"
+    BEGIN
+        MENUITEM "Save",                        ID_QUEUEPOPUP_SAVE
+        MENUITEM "Load",                        ID_QUEUEPOPUP_LOAD
+    END
+END
+
+IDR_MENU_BPHIST MENU
+BEGIN
+    POPUP "BPHistPop"
+    BEGIN
+        MENUITEM "Copy Row",                    ID_BPHISTPOP_COPYROW
+        MENUITEM SEPARATOR
+        MENUITEM "Remove From History",         ID_BPHISTPOP_REMOVE
+        MENUITEM "Remove All From History",     ID_BPHISTPOP_REMOVEALL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCEL_MAIN ACCELERATORS
+BEGIN
+    "X",            ID_APP_EXIT,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FUNCTIONS_CONNECT,   VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_FUNCTIONS_DISCONNECT, VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_FUNCTIONS_FREEZE,    VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_FUNCTIONS_QUEUECOMMANDS, VIRTKEY, CONTROL, NOINVERT
+    "U",            ID_FUNCTIONS_UNFREEZE,  VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_HELP_CONTENTS,       VIRTKEY, NOINVERT
+    "H",            ID_RESET_HARD,          VIRTKEY, CONTROL, ALT, NOINVERT
+    "S",            ID_RESET_SOFT,          VIRTKEY, CONTROL, ALT, NOINVERT
+    VK_F4,          ID_SETTINGS_AUTOFREEZE, VIRTKEY, NOINVERT
+    VK_F3,          ID_SETTINGS_FILELOG,    VIRTKEY, NOINVERT
+    VK_F5,          ID_SETTINGS_SHOWLOG,    VIRTKEY, NOINVERT
+    VK_F2,          ID_SETTINGS_WINDOW,     VIRTKEY, NOINVERT
+    VK_F6,          ID_SETTINGS_ONTOP,      VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_BPLIST       BITMAP                  "fullbplist.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "sdk.ico"
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED

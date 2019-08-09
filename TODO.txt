@@ -1,0 +1,14 @@
+?Switch logging to RTF
+?Add save buffer command
+When user clicks inside of edit box, select all the text
+Add better help
+Edit box memory
+Dump window
+-Compare two dumps
+
+Store last window positions
+-Including which are open
+Red disabled breakpoints
+
+Freeze button on breakpoint window
+Add "Open window" items under App (breakpoint win, new bp win, log win, etc)
